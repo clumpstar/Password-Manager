@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<!--<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFDD0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.passwordmanager.FXMLDocumentController">-->
+<!--   <children>-->
+<!--      <Label fx:id="heading" layoutX="195.0" layoutY="26.0" text="Password Manager">-->
+<!--         <font>-->
+<!--            <Font name="Franklin Gothic Medium Italic" size="50.0" />-->
+<!--         </font>-->
+<!--      </Label>-->
+<!--      <Pane layoutX="47.0" layoutY="130.0" prefHeight="423.0" prefWidth="296.0" style="-fx-background-color: #DE3163;">-->
+<!--         <children>-->
+<!--            <TextField fx:id="username" layoutX="55.0" layoutY="54.0" promptText="Enter your username" />-->
+<!--            <TextField fx:id="pass_text" layoutX="55.0" layoutY="117.0" />-->
+<!--            <PasswordField fx:id="pass_field" layoutX="55.0" layoutY="117.0" promptText="Enter your password" />-->
+<!--            <TextArea fx:id="desc" layoutX="55.0" layoutY="179.0" prefHeight="219.0" prefWidth="186.0" promptText="Enter the description" />-->
+<!--            <CheckBox fx:id="checker" layoutX="252.0" layoutY="122.0" mnemonicParsing="false" onAction="#checkFun" prefHeight="21.0" prefWidth="0.0" />-->
+<!--         </children>-->
+<!--      </Pane>-->
+<!--      <TableView fx:id="Details" layoutX="400.0" layoutY="130.0" prefHeight="360.0" prefWidth="377.0">-->
+<!--        <columns>-->
+<!--          <TableColumn fx:id="userCol" prefWidth="106.0" text="Username" />-->
+<!--          <TableColumn fx:id="descCol" prefWidth="142.0" text="Description" />-->
+<!--            <TableColumn fx:id="passCol" prefWidth="127.0" text="Password" />-->
+<!--        </columns>-->
+<!--      </TableView>-->
+<!--      <Button fx:id="addbtn" layoutX="458.0" layoutY="507.0" mnemonicParsing="false" onAction="#Add" text="Add" />-->
+<!--      <Button fx:id="updatebtn" layoutX="548.0" layoutY="507.0" mnemonicParsing="false" onAction="#Update" text="Update" />-->
+<!--      <Button fx:id="delbtn" layoutX="656.0" layoutY="507.0" mnemonicParsing="false" onAction="#Delete" text="Delete" />-->
+<!--      <Button fx:id="genbtn" layoutX="483.0" layoutY="553.0" mnemonicParsing="false" onAction="#generateRand" text="Generate random passoword" />-->
+<!--   </children>-->
+<!--</AnchorPane>-->
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.passwordmanager.FXMLDocumentController">
+   <center>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #FFFDD0;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+         <children>
+            <Label fx:id="heading" layoutX="195.0" layoutY="26.0" text="Password Manager">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="50.0" />
+               </font>
+            </Label>
+            <Pane layoutX="47.0" layoutY="130.0" prefHeight="423.0" prefWidth="296.0" style="-fx-background-color: #DE3163;">
+               <children>
+                  <TextField fx:id="username" layoutX="55.0" layoutY="54.0" promptText="Enter ID for password" />
+                  <TextField fx:id="pass_text" layoutX="55.0" layoutY="117.0" />
+                  <PasswordField fx:id="pass_field" layoutX="55.0" layoutY="117.0" promptText="Enter your password" />
+                  <TextArea fx:id="desc" layoutX="55.0" layoutY="179.0" prefHeight="219.0" prefWidth="186.0" promptText="Enter the description" />
+                  <CheckBox fx:id="checker" layoutX="252.0" layoutY="122.0" mnemonicParsing="false" onAction="#checkFun" prefHeight="21.0" prefWidth="0.0" />
+               </children>
+            </Pane>
+            <TableView fx:id="Details" layoutX="400.0" layoutY="130.0" prefHeight="360.0" prefWidth="377.0">
+               <columns>
+                  <TableColumn fx:id="userCol" prefWidth="106.0" text="ID" />
+                  <TableColumn fx:id="descCol" prefWidth="142.0" text="Description" />
+                  <TableColumn fx:id="passCol" prefWidth="127.0" text="Password" />
+               </columns>
+            </TableView>
+            <Button fx:id="addbtn" layoutX="458.0" layoutY="507.0" mnemonicParsing="false" onAction="#Add" text="Add" />
+            <Button fx:id="updatebtn" layoutX="548.0" layoutY="507.0" mnemonicParsing="false" onAction="#Update" text="Update" />
+            <Button fx:id="delbtn" layoutX="656.0" layoutY="507.0" mnemonicParsing="false" onAction="#Delete" text="Delete" />
+            <Button fx:id="genbtn" layoutX="483.0" layoutY="553.0" mnemonicParsing="false" onAction="#generateRand" text="Generate random passoword" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

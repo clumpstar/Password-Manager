@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.passwordmanager.HomeController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="pass_text" layoutX="207.0" layoutY="216.0" />
+            <Label layoutX="250.0" layoutY="31.0" text="Login">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="50.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="207.0" layoutY="161.0" promptText="Enter your username" />
+            <PasswordField fx:id="pass_field" layoutX="207.0" layoutY="216.0" promptText="Enter your password" />
+            <Button fx:id="signupBTN" layoutX="308.0" layoutY="277.0" mnemonicParsing="false" onAction="#signupbtn" text="Signup" />
+            <Button fx:id="loginBTN" layoutX="228.0" layoutY="277.0" mnemonicParsing="false" onAction="#loginbtn" text="Login" />
+            <CheckBox fx:id="check_pass" layoutX="420.0" layoutY="221.0" mnemonicParsing="false" onAction="#checkFun" text="Show password" />
+            <Button fx:id="remBTN" layoutX="254.0" layoutY="332.0" mnemonicParsing="false" onAction="#rembtn" text="Remove ID" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

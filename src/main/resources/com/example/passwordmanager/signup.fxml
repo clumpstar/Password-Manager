@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.passwordmanager.SignupController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <TextField fx:id="pass_text" layoutX="209.0" layoutY="222.0" />
+            <Label layoutX="229.0" layoutY="42.0" text="Signup">
+               <font>
+                  <Font name="Franklin Gothic Medium Italic" size="50.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="208.0" layoutY="166.0" promptText="Enter your username" />
+            <PasswordField fx:id="pass_field" layoutX="208.0" layoutY="222.0" promptText="Enter your password" />
+            <CheckBox fx:id="checkbtn" layoutX="422.0" layoutY="227.0" mnemonicParsing="false" onAction="#checkFun" text="Show password" />
+            <Button fx:id="signupBTN" layoutX="269.0" layoutY="279.0" mnemonicParsing="false" onAction="#signupbtn" text="Signup" />
+            <Button fx:id="backBTN" layoutX="270.0" layoutY="325.0" mnemonicParsing="false" onAction="#backFun" prefHeight="31.0" prefWidth="66.0" text="Back" />
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
